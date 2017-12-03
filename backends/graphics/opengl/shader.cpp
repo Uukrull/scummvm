@@ -70,8 +70,11 @@ const char *const g_lookUpFragmentShader =
 	"uniform sampler2D texture;\n"
 	"uniform sampler2D palette;\n"
 	"\n"
-	"const float adjustFactor = 255.0 / 256.0 + 1.0 / (2.0 * 256.0);"
-	"\n"
+	"#ifdef GL_ES\n"
+	"const float adjustFactor = 1.0;\n"
+	"#else\n"
+	"const float adjustFactor = 255.0 / 256.0 + 1.0 / (2.0 * 256.0);\n"
+	"#endif\n"
 	"void main(void) {\n"
 	"\tvec4 index = texture2D(texture, texCoord);\n"
 	"\tgl_FragColor = blendColor * texture2D(palette, vec2(index.a * adjustFactor, 0.0));\n"
@@ -81,7 +84,7 @@ const char *const g_lookUpFragmentShader =
 // Taken from: https://en.wikibooks.org/wiki/OpenGL_Programming/Modern_OpenGL_Tutorial_03#OpenGL_ES_2_portability
 const char *const g_precisionDefines =
 	"#ifdef GL_ES\n"
-	"\t#if defined(GL_FRAGMENT_PRECISION_HIGH) && GL_FRAGMENT_PRECISION_HIGH == 1\n"
+	"\t#ifdef GL_FRAGMENT_PRECISION_HIGH\n"
 	"\t\tprecision highp float;\n"
 	"\t#else\n"
 	"\t\tprecision mediump float;\n"

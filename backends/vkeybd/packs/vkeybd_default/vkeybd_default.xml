@@ -2,7 +2,7 @@
 <keyboard initial_mode="lowercase" v_align="bottom" h_align="center">
 <!-- coords key = "start x, start y, end x, end y" -->
   <!-- Lowercase -->
-  <mode name="lowercase" resolutions="320x240,640x480">
+  <mode name="lowercase" resolutions="320x240,640x480,960x720">
     <layout resolution="320x240" bitmap="lowercase320x240.bmp" transparent_color="255,0,255">
       <map>
         <area shape="rect" coords="13,8,306,20" target="display_area" />
@@ -159,6 +159,84 @@
         <area shape="rect" coords="585,266,622,298" target="cancel" />
       </map>
     </layout>
+    <layout resolution="960x720" bitmap="lowercase960x720.bmp" transparent_color="255,0,255">
+      <map>
+        <area shape="rect" coords="39,40,919,55" target="display_area" />
+        <area shape="rect" coords="27,78,76,127" target="esc" />
+        <area shape="rect" coords="150,76,202,132" target="f2" />
+        <area shape="rect" coords="88,73,141,132" target="f1" />
+        <area shape="rect" coords="213,79,264,133" target="f3" />
+        <area shape="rect" coords="271,76,324,130" target="f4" />
+        <area shape="rect" coords="334,78,387,132" target="f5" />
+        <area shape="rect" coords="397,78,448,133" target="f6" />
+        <area shape="rect" coords="459,76,511,135" target="f7" />
+        <area shape="rect" coords="520,79,573,133" target="f8" />
+        <area shape="rect" coords="583,73,636,132" target="f9" />
+        <area shape="rect" coords="646,78,696,133" target="f10" />
+        <area shape="rect" coords="705,79,759,132" target="f11" />
+        <area shape="rect" coords="766,78,819,135" target="f12" />
+        <area shape="rect" coords="828,82,930,130" target="del" />
+        <area shape="rect" coords="828,139,897,196" target="delete" />
+        <area shape="rect" coords="901,139,934,196" target="backspace" />
+        <area shape="rect" coords="25,204,99,256" target="tab" />
+        <area shape="rect" coords="109,205,162,256" target="q" />
+        <area shape="rect" coords="171,204,225,258" target="w" />
+        <area shape="rect" coords="235,201,283,256" target="e" />
+        <area shape="rect" coords="295,202,348,256" target="r" />
+        <area shape="rect" coords="358,202,411,258" target="t" />
+        <area shape="rect" coords="423,204,475,259" target="y" />
+        <area shape="rect" coords="483,202,538,259" target="u" />
+        <area shape="rect" coords="546,201,598,258" target="i" />
+        <area shape="rect" coords="606,202,660,256" target="o" />
+        <area shape="rect" coords="669,204,720,258" target="p" />
+        <area shape="rect" coords="133,265,190,324" target="a" />
+        <area shape="rect" coords="196,265,253,321" target="s" />
+        <area shape="rect" coords="259,267,313,322" target="d" />
+        <area shape="rect" coords="322,267,375,321" target="f" />
+        <area shape="rect" coords="384,267,436,321" target="g" />
+        <area shape="rect" coords="448,264,498,321" target="h" />
+        <area shape="rect" coords="508,267,561,322" target="j" />
+        <area shape="rect" coords="568,267,622,322" target="k" />
+        <area shape="rect" coords="631,267,685,322" target="l" />
+        <area shape="rect" coords="819,268,933,321" target="enter" />
+        <area shape="rect" coords="28,331,151,384" target="shift" />
+        <area shape="rect" coords="25,268,126,319" target="caps" />
+        <area shape="rect" coords="175,330,228,384" target="z" />
+        <area shape="rect" coords="237,330,288,384" target="x" />
+        <area shape="rect" coords="297,328,349,384" target="c" />
+        <area shape="rect" coords="360,330,414,385" target="v" />
+        <area shape="rect" coords="424,328,474,382" target="b" />
+        <area shape="rect" coords="486,330,538,384" target="n" />
+        <area shape="rect" coords="547,330,598,385" target="m" />
+        <area shape="rect" coords="813,328,934,385" target="symbols" />
+        <area shape="rect" coords="28,390,102,444" target="ctrl" />
+        <area shape="rect" coords="114,391,184,442" target="alt" />
+        <area shape="rect" coords="202,391,787,445" target="space" />
+        <area shape="rect" coords="24,142,79,193" target="|" />
+        <area shape="rect" coords="85,142,138,193" target="1" />
+        <area shape="rect" coords="150,141,201,195" target="2" />
+        <area shape="rect" coords="210,139,261,196" target="3" />
+        <area shape="rect" coords="273,139,325,195" target="4" />
+        <area shape="rect" coords="333,139,387,198" target="5" />
+        <area shape="rect" coords="397,141,448,196" target="6" />
+        <area shape="rect" coords="457,141,511,193" target="7" />
+        <area shape="rect" coords="522,139,573,192" target="8" />
+        <area shape="rect" coords="583,141,634,195" target="9" />
+        <area shape="rect" coords="646,139,697,195" target="0" />
+        <area shape="rect" coords="706,141,757,196" target="-" />
+        <area shape="rect" coords="766,139,819,196" target="=" />
+        <area shape="rect" coords="732,204,783,258" target="[" />
+        <area shape="rect" coords="793,202,847,259" target="]" />
+        <area shape="rect" coords="853,204,930,258" target="#" />
+        <area shape="rect" coords="693,265,747,321" target=";" />
+        <area shape="rect" coords="754,267,808,321" target="’" />
+        <area shape="rect" coords="607,330,660,384" target="," />
+        <area shape="rect" coords="670,330,724,384" target="." />
+        <area shape="rect" coords="730,330,786,384" target="/" />
+        <area shape="rect" coords="807,399,864,447" target="ok" />
+        <area shape="rect" coords="877,399,933,447" target="cancel" />
+      </map>
+    </layout>
     <event name="esc" type="key" code="27" ascii="27" modifiers="" />
     <event name="f1" type="key" code="282" ascii="315" modifiers="" />
     <event name="f2" type="key" code="283" ascii="316" modifiers="" />
@@ -236,7 +314,7 @@
   </mode>
 
   <!-- Uppercase -->
-  <mode name="uppercase" resolutions="320x240,640x480">
+  <mode name="uppercase" resolutions="320x240,640x480,960x720">
     <layout resolution="320x240" bitmap="uppercase320x240.bmp" transparent_color="255,0,255">
       <map>
         <area shape="rect" coords="13,8,306,20" target="display_area" />
@@ -393,6 +471,84 @@
         <area shape="rect" coords="585,266,622,298" target="cancel" />
       </map>
     </layout>
+    <layout resolution="960x720" bitmap="uppercase960x720.bmp" transparent_color="255,0,255">
+      <map>
+        <area shape="rect" coords="39,40,919,55" target="display_area" />
+        <area shape="rect" coords="27,78,76,127" target="esc" />
+        <area shape="rect" coords="150,76,202,132" target="f2" />
+        <area shape="rect" coords="88,73,141,132" target="f1" />
+        <area shape="rect" coords="213,79,264,133" target="f3" />
+        <area shape="rect" coords="271,76,324,130" target="f4" />
+        <area shape="rect" coords="334,78,387,132" target="f5" />
+        <area shape="rect" coords="397,78,448,133" target="f6" />
+        <area shape="rect" coords="459,76,511,135" target="f7" />
+        <area shape="rect" coords="520,79,573,133" target="f8" />
+        <area shape="rect" coords="583,73,636,132" target="f9" />
+        <area shape="rect" coords="646,78,696,133" target="f10" />
+        <area shape="rect" coords="705,79,759,132" target="f11" />
+        <area shape="rect" coords="766,78,819,135" target="f12" />
+        <area shape="rect" coords="828,82,930,130" target="del" />
+        <area shape="rect" coords="828,139,897,196" target="delete" />
+        <area shape="rect" coords="901,139,934,196" target="backspace" />
+        <area shape="rect" coords="25,204,99,256" target="tab" />
+        <area shape="rect" coords="109,205,162,256" target="Q" />
+        <area shape="rect" coords="171,204,225,258" target="W" />
+        <area shape="rect" coords="235,201,283,256" target="E" />
+        <area shape="rect" coords="295,202,348,256" target="R" />
+        <area shape="rect" coords="358,202,411,258" target="T" />
+        <area shape="rect" coords="423,204,475,259" target="Y" />
+        <area shape="rect" coords="483,202,538,259" target="U" />
+        <area shape="rect" coords="546,201,598,258" target="I" />
+        <area shape="rect" coords="606,202,660,256" target="O" />
+        <area shape="rect" coords="669,204,720,258" target="P" />
+        <area shape="rect" coords="133,265,190,324" target="A" />
+        <area shape="rect" coords="196,265,253,321" target="S" />
+        <area shape="rect" coords="259,267,313,322" target="D" />
+        <area shape="rect" coords="322,267,375,321" target="F" />
+        <area shape="rect" coords="384,267,436,321" target="G" />
+        <area shape="rect" coords="448,264,498,321" target="H" />
+        <area shape="rect" coords="508,267,561,322" target="J" />
+        <area shape="rect" coords="568,267,622,322" target="K" />
+        <area shape="rect" coords="631,267,685,322" target="L" />
+        <area shape="rect" coords="819,268,933,321" target="enter" />
+        <area shape="rect" coords="28,331,151,384" target="shift" />
+        <area shape="rect" coords="25,268,126,319" target="caps" />
+        <area shape="rect" coords="175,330,228,384" target="Z" />
+        <area shape="rect" coords="237,330,288,384" target="X" />
+        <area shape="rect" coords="297,328,349,384" target="C" />
+        <area shape="rect" coords="360,330,414,385" target="V" />
+        <area shape="rect" coords="424,328,474,382" target="B" />
+        <area shape="rect" coords="486,330,538,384" target="N" />
+        <area shape="rect" coords="547,330,598,385" target="M" />
+        <area shape="rect" coords="813,328,934,385" target="symbols" />
+        <area shape="rect" coords="28,390,102,444" target="ctrl" />
+        <area shape="rect" coords="114,391,184,442" target="alt" />
+        <area shape="rect" coords="202,391,787,445" target="space" />
+        <area shape="rect" coords="24,142,79,193" target="|" />
+        <area shape="rect" coords="85,142,138,193" target="1" />
+        <area shape="rect" coords="150,141,201,195" target="2" />
+        <area shape="rect" coords="210,139,261,196" target="3" />
+        <area shape="rect" coords="273,139,325,195" target="4" />
+        <area shape="rect" coords="333,139,387,198" target="5" />
+        <area shape="rect" coords="397,141,448,196" target="6" />
+        <area shape="rect" coords="457,141,511,193" target="7" />
+        <area shape="rect" coords="522,139,573,192" target="8" />
+        <area shape="rect" coords="583,141,634,195" target="9" />
+        <area shape="rect" coords="646,139,697,195" target="0" />
+        <area shape="rect" coords="706,141,757,196" target="-" />
+        <area shape="rect" coords="766,139,819,196" target="=" />
+        <area shape="rect" coords="732,204,783,258" target="[" />
+        <area shape="rect" coords="793,202,847,259" target="]" />
+        <area shape="rect" coords="853,204,930,258" target="#" />
+        <area shape="rect" coords="693,265,747,321" target=";" />
+        <area shape="rect" coords="754,267,808,321" target="’" />
+        <area shape="rect" coords="607,330,660,384" target="," />
+        <area shape="rect" coords="670,330,724,384" target="." />
+        <area shape="rect" coords="730,330,786,384" target="/" />
+        <area shape="rect" coords="807,399,864,447" target="ok" />
+        <area shape="rect" coords="877,399,933,447" target="cancel" />
+      </map>
+    </layout>
     <event name="esc" type="key" code="27" ascii="27" modifiers="" />
     <event name="f1" type="key" code="282" ascii="315" modifiers="" />
     <event name="f2" type="key" code="283" ascii="316" modifiers="" />
@@ -470,7 +626,7 @@
   </mode>
 
   <!-- Lowercase Symbols -->
-  <mode name="lowercasesymbols" resolutions="320x240,640x480">
+  <mode name="lowercasesymbols" resolutions="320x240,640x480,960x720">
     <layout resolution="320x240" bitmap="lowercase-symbols320x240.bmp" transparent_color="255,0,255">
       <map>
         <area shape="rect" coords="13,8,306,20" target="display_area" />
@@ -627,6 +783,84 @@
         <area shape="rect" coords="585,266,622,298" target="cancel" />
       </map>
     </layout>
+    <layout resolution="960x720" bitmap="lowercase-symbols960x720.bmp" transparent_color="255,0,255">
+      <map>
+        <area shape="rect" coords="39,40,919,55" target="display_area" />
+        <area shape="rect" coords="27,78,76,127" target="esc" />
+        <area shape="rect" coords="150,76,202,132" target="f2" />
+        <area shape="rect" coords="88,73,141,132" target="f1" />
+        <area shape="rect" coords="213,79,264,133" target="f3" />
+        <area shape="rect" coords="271,76,324,130" target="f4" />
+        <area shape="rect" coords="334,78,387,132" target="f5" />
+        <area shape="rect" coords="397,78,448,133" target="f6" />
+        <area shape="rect" coords="459,76,511,135" target="f7" />
+        <area shape="rect" coords="520,79,573,133" target="f8" />
+        <area shape="rect" coords="583,73,636,132" target="f9" />
+        <area shape="rect" coords="646,78,696,133" target="f10" />
+        <area shape="rect" coords="705,79,759,132" target="f11" />
+        <area shape="rect" coords="766,78,819,135" target="f12" />
+        <area shape="rect" coords="828,82,930,130" target="del" />
+        <area shape="rect" coords="24,142,79,193" target="¬" />
+        <area shape="rect" coords="85,142,138,193" target="!" />
+        <area shape="rect" coords="150,141,201,195" target="quote" />
+        <area shape="rect" coords="210,139,261,196" target="£" />
+        <area shape="rect" coords="273,139,325,195" target="$" />
+        <area shape="rect" coords="333,139,387,198" target="%" />
+        <area shape="rect" coords="397,141,448,196" target="^" />
+        <area shape="rect" coords="457,141,511,193" target="&amp;" />
+        <area shape="rect" coords="522,139,573,192" target="*" />
+        <area shape="rect" coords="583,141,634,195" target="(" />
+        <area shape="rect" coords="646,139,697,195" target=")" />
+        <area shape="rect" coords="706,141,757,196" target="_" />
+        <area shape="rect" coords="766,139,819,196" target="+" />
+        <area shape="rect" coords="828,139,897,196" target="delete" />
+        <area shape="rect" coords="901,139,934,196" target="backspace" />
+        <area shape="rect" coords="25,204,99,256" target="tab" />
+        <area shape="rect" coords="109,205,162,256" target="q" />
+        <area shape="rect" coords="171,204,225,258" target="w" />
+        <area shape="rect" coords="235,201,283,256" target="e" />
+        <area shape="rect" coords="295,202,348,256" target="r" />
+        <area shape="rect" coords="358,202,411,258" target="t" />
+        <area shape="rect" coords="423,204,475,259" target="y" />
+        <area shape="rect" coords="483,202,538,259" target="u" />
+        <area shape="rect" coords="546,201,598,258" target="i" />
+        <area shape="rect" coords="606,202,660,256" target="o" />
+        <area shape="rect" coords="669,204,720,258" target="p" />
+        <area shape="rect" coords="732,204,783,258" target="{" />
+        <area shape="rect" coords="793,202,847,259" target="}" />
+        <area shape="rect" coords="853,204,930,258" target="~" />
+        <area shape="rect" coords="25,268,126,319" target="caps" />
+        <area shape="rect" coords="133,265,190,324" target="a" />
+        <area shape="rect" coords="196,265,253,321" target="s" />
+        <area shape="rect" coords="259,267,313,322" target="d" />
+        <area shape="rect" coords="322,267,375,321" target="f" />
+        <area shape="rect" coords="384,267,436,321" target="g" />
+        <area shape="rect" coords="448,264,498,321" target="h" />
+        <area shape="rect" coords="508,267,561,322" target="j" />
+        <area shape="rect" coords="568,267,622,322" target="k" />
+        <area shape="rect" coords="631,267,685,322" target="l" />
+        <area shape="rect" coords="693,265,747,321" target=":" />
+        <area shape="rect" coords="754,267,808,321" target="@" />
+        <area shape="rect" coords="819,268,933,321" target="enter" />
+        <area shape="rect" coords="28,331,151,384" target="shift" />
+        <area shape="rect" coords="175,330,228,384" target="z" />
+        <area shape="rect" coords="237,330,288,384" target="x" />
+        <area shape="rect" coords="297,328,349,384" target="c" />
+        <area shape="rect" coords="360,330,414,385" target="v" />
+        <area shape="rect" coords="424,328,474,382" target="b" />
+        <area shape="rect" coords="486,330,538,384" target="n" />
+        <area shape="rect" coords="547,330,598,385" target="m" />
+        <area shape="rect" coords="607,330,660,384" target="&lt;" />
+        <area shape="rect" coords="670,330,724,384" target="&gt;" />
+        <area shape="rect" coords="730,330,786,384" target="?" />
+        <area shape="rect" coords="813,328,934,385" target="symbols" />
+        <area shape="rect" coords="28,390,102,444" target="ctrl" />
+        <area shape="rect" coords="114,391,184,442" target="alt" />
+        <area shape="rect" coords="202,391,787,445" target="space" />
+        <area shape="rect" coords="807,399,864,447" target="ok" />
+        <area shape="rect" coords="877,399,933,447" target="cancel" />
+      </map>
+    </layout>
     <event name="esc" type="key" code="27" ascii="27" modifiers="" />
     <event name="f1" type="key" code="282" ascii="315" modifiers="" />
     <event name="f2" type="key" code="283" ascii="316" modifiers="" />
@@ -704,7 +938,7 @@
   </mode>
 
   <!-- Uppercase Symbols -->
-  <mode name="uppercasesymbols" resolutions="320x240,640x480">
+  <mode name="uppercasesymbols" resolutions="320x240,640x480,960x720">
     <layout resolution="320x240" bitmap="uppercase-symbols320x240.bmp" transparent_color="255,0,255">
       <map>
         <area shape="rect" coords="13,8,306,20" target="display_area" />
@@ -859,6 +1093,84 @@
         <area shape="rect" coords="135,261,525,297" target="space" />
         <area shape="rect" coords="538,266,576,298" target="ok" />
         <area shape="rect" coords="585,266,622,298" target="cancel" />
+      </map>
+    </layout>
+    <layout resolution="960x720" bitmap="uppercase-symbols960x720.bmp" transparent_color="255,0,255">
+      <map>
+        <area shape="rect" coords="39,40,919,55" target="display_area" />
+        <area shape="rect" coords="27,78,76,127" target="esc" />
+        <area shape="rect" coords="150,76,202,132" target="f2" />
+        <area shape="rect" coords="88,73,141,132" target="f1" />
+        <area shape="rect" coords="213,79,264,133" target="f3" />
+        <area shape="rect" coords="271,76,324,130" target="f4" />
+        <area shape="rect" coords="334,78,387,132" target="f5" />
+        <area shape="rect" coords="397,78,448,133" target="f6" />
+        <area shape="rect" coords="459,76,511,135" target="f7" />
+        <area shape="rect" coords="520,79,573,133" target="f8" />
+        <area shape="rect" coords="583,73,636,132" target="f9" />
+        <area shape="rect" coords="646,78,696,133" target="f10" />
+        <area shape="rect" coords="705,79,759,132" target="f11" />
+        <area shape="rect" coords="766,78,819,135" target="f12" />
+        <area shape="rect" coords="828,82,930,130" target="del" />
+        <area shape="rect" coords="24,142,79,193" target="¬" />
+        <area shape="rect" coords="85,142,138,193" target="!" />
+        <area shape="rect" coords="150,141,201,195" target="quote" />
+        <area shape="rect" coords="210,139,261,196" target="£" />
+        <area shape="rect" coords="273,139,325,195" target="$" />
+        <area shape="rect" coords="333,139,387,198" target="%" />
+        <area shape="rect" coords="397,141,448,196" target="^" />
+        <area shape="rect" coords="457,141,511,193" target="&amp;" />
+        <area shape="rect" coords="522,139,573,192" target="*" />
+        <area shape="rect" coords="583,141,634,195" target="(" />
+        <area shape="rect" coords="646,139,697,195" target=")" />
+        <area shape="rect" coords="706,141,757,196" target="_" />
+        <area shape="rect" coords="766,139,819,196" target="+" />
+        <area shape="rect" coords="828,139,897,196" target="delete" />
+        <area shape="rect" coords="901,139,934,196" target="backspace" />
+        <area shape="rect" coords="25,204,99,256" target="tab" />
+        <area shape="rect" coords="109,205,162,256" target="Q" />
+        <area shape="rect" coords="171,204,225,258" target="W" />
+        <area shape="rect" coords="235,201,283,256" target="E" />
+        <area shape="rect" coords="295,202,348,256" target="R" />
+        <area shape="rect" coords="358,202,411,258" target="T" />
+        <area shape="rect" coords="423,204,475,259" target="Y" />
+        <area shape="rect" coords="483,202,538,259" target="U" />
+        <area shape="rect" coords="546,201,598,258" target="I" />
+        <area shape="rect" coords="606,202,660,256" target="O" />
+        <area shape="rect" coords="669,204,720,258" target="P" />
+        <area shape="rect" coords="732,204,783,258" target="{" />
+        <area shape="rect" coords="793,202,847,259" target="}" />
+        <area shape="rect" coords="853,204,930,258" target="~" />
+        <area shape="rect" coords="25,268,126,319" target="caps" />
+        <area shape="rect" coords="133,265,190,324" target="A" />
+        <area shape="rect" coords="196,265,253,321" target="S" />
+        <area shape="rect" coords="259,267,313,322" target="D" />
+        <area shape="rect" coords="322,267,375,321" target="F" />
+        <area shape="rect" coords="384,267,436,321" target="G" />
+        <area shape="rect" coords="448,264,498,321" target="H" />
+        <area shape="rect" coords="508,267,561,322" target="J" />
+        <area shape="rect" coords="568,267,622,322" target="K" />
+        <area shape="rect" coords="631,267,685,322" target="L" />
+        <area shape="rect" coords="693,265,747,321" target=":" />
+        <area shape="rect" coords="754,267,808,321" target="@" />
+        <area shape="rect" coords="819,268,933,321" target="enter" />
+        <area shape="rect" coords="28,331,151,384" target="shift" />
+        <area shape="rect" coords="175,330,228,384" target="z" />
+        <area shape="rect" coords="237,330,288,384" target="x" />
+        <area shape="rect" coords="297,328,349,384" target="c" />
+        <area shape="rect" coords="360,330,414,385" target="v" />
+        <area shape="rect" coords="424,328,474,382" target="b" />
+        <area shape="rect" coords="486,330,538,384" target="n" />
+        <area shape="rect" coords="547,330,598,385" target="m" />
+        <area shape="rect" coords="607,330,660,384" target="&lt;" />
+        <area shape="rect" coords="670,330,724,384" target="&gt;" />
+        <area shape="rect" coords="730,330,786,384" target="?" />
+        <area shape="rect" coords="813,328,934,385" target="symbols" />
+        <area shape="rect" coords="28,390,102,444" target="ctrl" />
+        <area shape="rect" coords="114,391,184,442" target="alt" />
+        <area shape="rect" coords="202,391,787,445" target="space" />
+        <area shape="rect" coords="807,399,864,447" target="ok" />
+        <area shape="rect" coords="877,399,933,447" target="cancel" />
       </map>
     </layout>
     <event name="esc" type="key" code="27" ascii="27" modifiers="" />

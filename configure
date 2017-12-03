@@ -1598,6 +1598,11 @@ psp)
 	_host_cpu=mipsallegrexel
 	_host_alias=psp
 	;;
+s905)
+	_host_os=linux
+	_host_cpu=arm
+	_host_alias=armv8a-libreelec-linux-gnueabi
+	;;
 samsungtv)
 	_host_os=linux
 	_host_cpu=arm
@@ -3243,6 +3248,20 @@ if test -n "$_host"; then
 			_mt32emu=no
 			_port_mk="backends/platform/psp/psp.mk"
 			;;
+		s905)
+			append_var DEFINES "-DJOY_ANALOG"
+			if test "$_optimizations" = yes; then
+				_optimization_level=-O3
+			fi
+
+			define_in_config_if_yes yes 'USE_ARM_NEON_ASPECT_CORRECTOR'
+			append_var CXXFLAGS "-march=armv8-a+crc"
+			append_var CXXFLAGS "-mcpu=cortex-a53"
+			append_var CXXFLAGS "-mfloat-abi=hard"
+			append_var CXXFLAGS "-mfpu=neon-fp-armv8"
+			append_var ASFLAGS "-mfloat-abi=hard"
+			_build_hq_scalers=yes
+			;;
 		samsungtv)
 			append_var DEFINES "-DSAMSUNGTV"
 			append_var DEFINES "-DDISABLE_COMMAND_LINE"
@@ -4476,6 +4495,12 @@ case $_host_os in
 
 	*)
 		FLUIDSYNTH_STATIC_LIBS="$FLUIDSYNTH_LIBS -lglib-2.0 -lintl -liconv"
+	;;
+esac
+
+case $_host in
+	s905)
+		FLUIDSYNTH_STATIC_LIBS="$FLUIDSYNTH_LIBS -lglib-2.0 -lasound -lm"
 	;;
 esac
 

@@ -114,8 +114,10 @@ protected:
 	virtual bool handleMouseButtonUp(SDL_Event &ev, Common::Event &event);
 	virtual bool handleJoyButtonDown(SDL_Event &ev, Common::Event &event);
 	virtual bool handleJoyButtonUp(SDL_Event &ev, Common::Event &event);
+	virtual bool handleJoyHat(SDL_Event &ev, Common::Event &event);
 	virtual bool handleJoyAxisMotion(SDL_Event &ev, Common::Event &event);
 	virtual bool handleKbdMouse(Common::Event &event);
+	virtual void PushKeyEvent(int state, SDLKey key);
 
 	//@}
 

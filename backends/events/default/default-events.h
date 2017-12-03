@@ -39,6 +39,8 @@ class VirtualKeyboard;
 class DefaultEventManager : public Common::EventManager, Common::EventObserver {
 #ifdef ENABLE_VKEYBD
 	Common::VirtualKeyboard *_vk;
+	Common::String old_gfx_mode;
+	Common::String new_gfx_mode;
 #endif
 
 #ifdef ENABLE_KEYMAPPER

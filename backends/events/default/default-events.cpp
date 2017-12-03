@@ -81,6 +81,7 @@ void DefaultEventManager::init() {
 	} else {
 		_vk->loadKeyboardPack("vkeybd_default");
 	}
+	old_gfx_mode = ConfMan.get("gfx_mode");
 #endif
 }
 
@@ -156,6 +157,20 @@ bool DefaultEventManager::pollEvent(Common::Event &event) {
 	case Common::EVENT_VIRTUAL_KEYBOARD:
 		if (!_vk)
 			break;
+
+		new_gfx_mode = ConfMan.get("gfx_mode");
+		if ((new_gfx_mode != old_gfx_mode) && (new_gfx_mode == "opengl" || old_gfx_mode == "opengl")) {
+			debug("GFX_MODE = %s", new_gfx_mode.c_str());
+			old_gfx_mode = new_gfx_mode;
+			delete _vk;
+			_vk = new Common::VirtualKeyboard();
+
+			if (ConfMan.hasKey("vkeybd_pack_name")) {
+				_vk->loadKeyboardPack(ConfMan.get("vkeybd_pack_name"));
+			} else {
+				_vk->loadKeyboardPack("vkeybd_default");
+			}
+		}
 
 		if (_vk->isDisplaying()) {
 			_vk->close(true);

@@ -992,6 +992,7 @@ Surface *OpenGLGraphicsManager::createSurface(const Graphics::PixelFormat &forma
 		// hope for this to change anytime soon) we use pixel format
 		// conversion to a supported texture format. However, this is a one
 		// time exception.
+		debug("TextureRGB555!!!!!!!!!!!!!!!!");
 		return new TextureRGB555();
 #endif // !USE_FORCED_GL
 	} else {
@@ -1013,21 +1014,25 @@ bool OpenGLGraphicsManager::getGLPixelFormat(const Graphics::PixelFormat &pixelF
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_BYTE;
+		debug("ABGR8888");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 5, 6, 5, 0, 11, 5, 0, 0)) { // RGB565
 		glIntFormat = GL_RGB;
 		glFormat = GL_RGB;
 		glType = GL_UNSIGNED_SHORT_5_6_5;
+		debug("RGB565");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 5, 5, 5, 1, 11, 6, 1, 0)) { // RGBA5551
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_SHORT_5_5_5_1;
+		debug("RGBA5551");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 4, 4, 4, 4, 12, 8, 4, 0)) { // RGBA4444
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_SHORT_4_4_4_4;
+		debug("RGBA4444");
 		return true;
 #if !USE_FORCED_GLES && !USE_FORCED_GLES2
 	// The formats below are not supported by every GLES implementation.
@@ -1039,52 +1044,62 @@ bool OpenGLGraphicsManager::getGLPixelFormat(const Graphics::PixelFormat &pixelF
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_INT_8_8_8_8;
+		debug("RGBA8888");
 		return true;
 #endif
 	} else if (pixelFormat == Graphics::PixelFormat(2, 5, 5, 5, 0, 10, 5, 0, 0)) { // RGB555
 		glIntFormat = GL_RGB;
 		glFormat = GL_BGRA;
 		glType = GL_UNSIGNED_SHORT_1_5_5_5_REV;
+		debug("RGB555");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 4, 4, 4, 4, 8, 4, 0, 12)) { // ARGB4444
 		glIntFormat = GL_RGBA;
 		glFormat = GL_BGRA;
 		glType = GL_UNSIGNED_SHORT_4_4_4_4_REV;
+		debug("ARGB4444");
 		return true;
 #ifdef SCUMM_BIG_ENDIAN
 	} else if (pixelFormat == Graphics::PixelFormat(4, 8, 8, 8, 8, 0, 8, 16, 24)) { // ABGR8888
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_INT_8_8_8_8_REV;
+		debug("ABGR8888");
 		return true;
 #endif
 	} else if (pixelFormat == Graphics::PixelFormat(4, 8, 8, 8, 8, 8, 16, 24, 0)) { // BGRA8888
 		glIntFormat = GL_RGBA;
 		glFormat = GL_BGRA;
 		glType = GL_UNSIGNED_INT_8_8_8_8;
+		debug("BGRA8888");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 5, 6, 5, 0, 0, 5, 11, 0)) { // BGR565
 		glIntFormat = GL_RGB;
 		glFormat = GL_RGB;
 		glType = GL_UNSIGNED_SHORT_5_6_5_REV;
+		debug("BGR565");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 5, 5, 5, 1, 1, 6, 11, 0)) { // BGRA5551
 		glIntFormat = GL_RGBA;
 		glFormat = GL_BGRA;
 		glType = GL_UNSIGNED_SHORT_5_5_5_1;
+		debug("BGRA5551");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 4, 4, 4, 4, 0, 4, 8, 12)) { // ABGR4444
 		glIntFormat = GL_RGBA;
 		glFormat = GL_RGBA;
 		glType = GL_UNSIGNED_SHORT_4_4_4_4_REV;
+		debug("ABGR4444");
 		return true;
 	} else if (pixelFormat == Graphics::PixelFormat(2, 4, 4, 4, 4, 4, 8, 12, 0)) { // BGRA4444
 		glIntFormat = GL_RGBA;
 		glFormat = GL_BGRA;
 		glType = GL_UNSIGNED_SHORT_4_4_4_4;
+		debug("BGRA4444");
 		return true;
 #endif // !USE_FORCED_GLES && !USE_FORCED_GLES2
 	} else {
+		debug("FFFFFF");
 		return false;
 	}
 }

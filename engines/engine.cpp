@@ -310,7 +310,7 @@ void initGraphics(int width, int height, const Graphics::PixelFormat *format) {
 	}
 
 	// Just show warnings then these occur:
-#ifdef USE_RGB_COLOR
+#ifdef USE_RGB_COLOR1
 	if (gfxError & OSystem::kTransactionFormatNotSupported) {
 		Common::String message = _("Could not initialize color format.");
 
